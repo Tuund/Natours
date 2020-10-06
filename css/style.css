@@ -475,7 +475,8 @@ body {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
 
 .navigation__background {
   position: fixed;
@@ -486,17 +487,20 @@ body {
   width: 6rem;
   border-radius: 50%;
   background-image: radial-gradient(#7ed56f, #28b485);
-  transform: scale(80); }
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation__nav {
   position: fixed;
   z-index: 1500;
+  opacity: 0;
+  width: 0;
   top: 0;
-  right: 0;
+  left: 0;
   height: 100vh;
-  width: 100%; }
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.0265, 1.55); }
 
 .navigation__list {
+  width: 100%;
   list-style: none;
   text-align: center; }
   .navigation__list {
@@ -527,6 +531,13 @@ body {
   color: #55c57a;
   background-position: 100%;
   transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
 
 .header {
   position: relative;
