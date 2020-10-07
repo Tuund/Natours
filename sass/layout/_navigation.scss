@@ -46,7 +46,7 @@
   &__list {
     width: 100%;
 
-    @include centerVH;
+    @include absCenter;
 
     list-style: none;
     text-align: center;
