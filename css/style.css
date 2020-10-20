@@ -474,7 +474,9 @@ body {
       padding-left: 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .story {
-      transform: skewX(0); } }
+      transform: skewX(0);
+      padding: 3rem;
+      padding-left: 6rem; } }
   .story__shape {
     position: relative;
     float: left;
@@ -756,6 +758,7 @@ body {
   position: fixed;
   z-index: 1500;
   opacity: 0;
+  visibility: hidden;
   width: 0;
   top: 0;
   left: 0;
@@ -799,6 +802,7 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  visibility: visible;
   width: 100%; }
 
 .navigation__icon {
@@ -1027,4 +1031,5 @@ body {
         width: 65%; } }
     @media only screen and (max-width: 56.25em) {
       .book__form {
-        width: 100%; } }
+        width: 100%;
+        padding: 4rem; } }

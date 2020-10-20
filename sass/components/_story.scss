@@ -18,6 +18,8 @@
 
   @include respond(phone) {
     transform: skewX(0);
+    padding: 3rem;
+    padding-left: 6rem;
   }
 
   &__shape {

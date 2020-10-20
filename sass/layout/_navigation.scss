@@ -55,6 +55,7 @@
     position: fixed;
     z-index: 1500;
     opacity: 0;
+    visibility: hidden;
     width: 0;
 
     top: 0;
@@ -112,6 +113,7 @@
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
+    visibility: visible;
     width: 100%;
   }
 
